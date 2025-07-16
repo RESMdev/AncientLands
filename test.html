@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  .tarjeta  {
+    width: 200px;
+    height: 120px;
+    background-color: #222;
+    border-radius: 16px;
+    margin: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .tarjeta.sombra-click {
+    box-shadow: 0 0 20px 6px rgba(20, 255, 236, 0.6);
+  }
+</style>
+<title>Prueba Sombra Click</title>
+</head>
+<body>
+
+<div class="tarjeta"></div>
+
+<script>
+  // Aquí el DOM ya cargó porque el script está al final del body
+document.querySelectorAll('.tarjeta').forEach(tarjeta => {
+  tarjeta.addEventListener('click', () => {
+    tarjeta.classList.toggle('sombra-click');
+  });
+});
+
+</script>
+
+</body>
+</html>

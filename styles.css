@@ -1,0 +1,459 @@
+.main-container {
+  background-color: #fff;
+  border-radius: 30px 30px 58px 58px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  flex-shrink: 0; /* ✅ No se colapsa al hacer scroll */
+  padding-bottom: 10vh;
+  overflow: hidden;
+}
+
+.logo-fijo {
+  position: fixed;
+  bottom: 8px;     /* Margen inferior */
+  left: 8px;       /* Margen izquierdo */
+  width: 60px;     /* Puedes ajustar el tamaño */
+  height: auto;
+  z-index: 1000;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.logo-fijo:hover {
+  opacity: 10;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--negro2);
+  color: var(--negro2);
+  font-family: sans-serif;
+  gap: 3.33vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menú */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0.78125vh;
+  margin: 0;
+  gap: 3.33vw;
+  
+}
+
+.elementoMenu {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.39vh; 
+    align-items: center;
+}
+
+.menuH {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px;
+  position: relative;
+  z-index: 100000;
+}
+
+.frame .boton-landing-menu {
+  display: inline-flex;
+  flex-direction: column;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: var(--themis-n-font-family);
+  font-weight: var(--themis-n-font-weight);
+  color: #000000;
+  font-size: var(--themis-n-font-size);
+  letter-spacing: var(--themis-n-letter-spacing);
+  line-height: var(--themis-n-line-height);
+  font-style: var(--themis-n-font-style);
+}
+
+.frame .rectangle-wrapper {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.frame .rectangle {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  background-color: #000000;
+  border: 3px solid;
+  border-color: var(--c);
+  transform: rotate(45deg);
+}
+
+.frame .div {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+/* ---- */
+
+:root {
+  --negro: #000000;
+  --negro2: #121212;
+  --blanco: #ffffff;
+  --verde: #8BFF12;
+  --morado: #8612FF;
+  --morado2: #8742CF;
+  --naranja: #FFBC12;
+  --gristransparente: #D9D9D9;
+  --gris: #636B6B;
+  --pulpo: #3000F2;
+  --fabada: #9E005F;
+  --paella: #FFAA00;
+  --gazpacho: #FF5533;
+  --tortilla: #765656;
+  --amarillo: #FFF712;
+  --resmdev: #14FFEC;
+  --c: rgba(139, 255, 18, 1);
+
+    --themis-font-family: "Quicksand", Helvetica;
+    --themis-font-weight: 400;
+    --themis-font-size: 18px;
+    --themis-letter-spacing: 0px;
+    --themis-line-height: normal;
+    --themis-font-style: normal;
+    --themis-n-font-family: "Quicksand", Helvetica;
+    --themis-n-font-weight: 600;
+    --themis-n-font-size: 18px;
+    --themis-n-letter-spacing: 0px;
+    --themis-n-line-height: normal;
+    --themis-n-font-style: normal;
+    --prometeo-font-family: "Quicksand", Helvetica;
+    --prometeo-font-weight: 400;
+    --prometeo-font-size: 28px;
+    --prometeo-letter-spacing: 0px;
+    --prometeo-line-height: normal;
+    --prometeo-font-style: normal;
+    --prometeo-n-font-family: "Quicksand", Helvetica;
+    --prometeo-n-font-weight: 600;
+    --prometeo-n-font-size: 28px;
+    --prometeo-n-letter-spacing: 0px;
+    --prometeo-n-line-height: normal;
+    --prometeo-n-font-style: normal;
+    --atlas-font-family: "Quicksand", Helvetica;
+    --atlas-font-weight: 400;
+    --atlas-font-size: 45px;
+    --atlas-letter-spacing: 0px;
+    --atlas-line-height: normal;
+    --atlas-font-style: normal;
+    --atlas-n-font-family: "Quicksand", Helvetica;
+    --atlas-n-font-weight: 600;
+    --atlas-n-font-size: 45px;
+    --atlas-n-letter-spacing: 0px;
+    --atlas-n-line-height: normal;
+    --atlas-n-font-style: normal;
+    --cronos-font-family: "Quicksand", Helvetica;
+    --cronos-font-weight: 400;
+    --cronos-font-size: 72px;
+    --cronos-letter-spacing: 0px;
+    --cronos-line-height: normal;
+    --cronos-font-style: normal;
+    --cronos-n-font-family: "Quicksand", Helvetica;
+    --cronos-n-font-weight: 600;
+    --cronos-n-font-size: 72px;
+    --cronos-n-letter-spacing: 0px;
+    --cronos-n-line-height: normal;
+    --cronos-n-font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .menuH ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding: 12px 0;
+  }
+
+  .boton-landing-menu {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .elementoMenu {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2vw;
+    padding-left: 5vw;
+  }
+
+  .icono-menu {
+    width: 24px;
+    height: auto;
+  }
+
+  .main-container {
+    border-radius: 0;
+    height: 100vh;
+    padding-bottom: 80px; /* para evitar que el logo fijo se monte encima */
+    border-radius: 30px 30px 58px 58px;
+    overflow: hidden;
+  }
+
+  .logo-fijo {
+    width: 50px;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  .frame .rectangle-wrapper {
+    display: none; /* ocultamos los decorativos si no se adaptan bien */
+  }
+}
+
+/* Menu Hamburguesa */
+.menu-icon {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    padding: 12px;
+    display: none;
+    top: 10px;      /* Ajusta según el diseño */
+    right: 10px;    /* Aquí está a la derecha */
+    z-index: 2000;  /* Para que quede encima */
+}
+
+#mobileMenu {
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    list-style: none;
+    display: none;
+    background-color: var(--blanco);
+    border: 8px solid var(--verde);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 100;
+    width: auto;
+    border-radius: 24px 24px 24px 24px;
+    flex-direction: column;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    gap: 0px;
+    transform: translateX(100%);
+}
+
+#mobileMenu li {
+  width: 100%;            /* Ocupa todo el ancho */
+  display: flex;
+  justify-content: flex-end;
+}
+
+#mobileMenu li a {
+  text-decoration: none;
+  color: var(--negro);           /* O el color que prefieras */
+  padding: 10px 0;
+}
+
+a {
+  color: inherit;           /* Hereda el color del padre */
+  text-decoration: none;    /* Quita el subrayado */
+  font-family: 'Quicksand', 'Helvetica', sans-serif;
+}
+
+.fuenteMenuMovil {
+  font-family: var(--themis-n-font-family);
+  font-size: var(--themis-n-font-size);
+  font-weight: var(--themis-n-font-weight);
+}
+
+.fuenteMenu {
+  font-family: var(--themis-n-font-family);
+  font-size: var(--themis-n-font-size);
+  font-weight: var(--themis-n-font-weight);
+}
+
+
+
+#mobileMenu.abierto {
+      transform: translateX(0);
+  opacity: 1;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .menuH {
+        display: none;
+    }
+        
+    .menu-icon {
+        display: block;
+    }
+}
+
+/*Scroll*/
+/* Quitar el scroll original del navegador */
+.scroll-container {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Scroll personalizado */
+.custom-scrollbar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(50%);
+    width: 40px;
+    height: 80px; /* altura visible del ghast */
+    cursor: grab;
+    z-index: 9999;
+    display: block ;
+}
+
+
+
+.custom-scrollbar img {
+  width: 100%;
+  height: auto;
+  pointer-events: auto; /* Necesario para poder arrastrar */
+}
+
+/*Animaciones*/
+/* Fijar fondo para que nunca muestre negro/blanco por defecto */
+html, body {
+  background-color: #fafafa; /* o el color base de tu diseño */
+  transition: opacity 150ms ease-out;
+  opacity: 1;
+}
+
+body.is-exiting {
+  opacity: 0;
+}
+
+/*Navegacion Suave*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Navegacion*/
+.menuSec-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: fixed;
+  left: 28px;
+  bottom: 96px;
+}
+
+.menuSec-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menuSec-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.menuSec-icon.normal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menuSec-icon.hover,
+.menuSec-icon.active {
+  opacity: 0;
+}
+
+.menuSec-link:hover .menuSec-icon.hover {
+  opacity: 1;
+}
+
+.menuSec-link:hover .menuSec-icon.normal {
+  opacity: 0;
+}
+
+.menuSec-link.active .menuSec-icon.active {
+  opacity: 1;
+}
+
+.menuSec-link.active .menuSec-icon.normal,
+.menuSec-link.active .menuSec-icon.hover {
+  opacity: 0;
+}
+
+/*Fuentes*/
+@font-face {
+  font-family: 'Minecraft-n';
+  src: url('fonts/MinecraftBold-nMK1.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('fonts/MinecraftRegular-Bmg3.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinecraftEvenings';
+  src: url('fonts/MinecraftEvenings-lgvPd.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinecraftCodigo';
+  src: url('fonts/SgaSmoothRegular-DO0Y3.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

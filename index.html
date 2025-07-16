@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Language" content="es" />
+  
+  <title>AncientLands | Servidor Minecraft Survival, Facciones y Clanes Medievales en Español</title>
+  
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="author" content="AncientLands Team" />
+  <meta name="description" content="Únete a AncientLands, el mejor servidor Minecraft en español. Disfruta survival, facciones medievales, economía, clanes históricos y un mapa temático único. ¡Juega ya!" />
+  <meta name="keywords" content="Minecraft, servidor Minecraft, survival Minecraft, facciones, clanes históricos, economía Minecraft, arquitectura, pvp, mapa temático, medieval, AncientLands, servidor en español" />
+
+  <link rel="canonical" href="https://ancientlands.sytes.net/" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="script.js" defer></script>
+
+
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AncientLands | Servidor Minecraft Survival, Facciones y Clanes Medievales en Español" />
+  <meta property="og:description" content="Únete a AncientLands, el mejor servidor Minecraft en español. Survival, clanes históricos, economía y mapa temático. ¡Juega ya!" />
+  <meta property="og:url" content="https://ancientlands.sytes.net/" />
+  <meta property="og:site_name" content="AncientLands" />
+  <meta property="og:image" content="https://ancientlands.sytes.net/assets/logo.png" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AncientLands | Servidor Minecraft Survival, Facciones y Clanes Medievales en Español" />
+  <meta name="twitter:description" content="Únete a AncientLands, el mejor servidor Minecraft en español. Survival, clanes históricos, economía y mapa temático. ¡Juega ya!" />
+  <meta name="twitter:image" content="https://ancientlands.sytes.net/assets/logo.png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AncientLands",
+    "url": "https://ancientlands.sytes.net/",
+    "logo": "https://ancientlands.sytes.net/assets/logo.png",
+    "sameAs": [
+      "https://www.tiktok.com/@ancientlandsoficial",
+      "https://www.youtube.com/@AncientLands-w2v5n",
+      "https://www.instagram.com/ancientlandsoficial/"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://ancientlands.sytes.net/",
+    "name": "AncientLands",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ancientlands.sytes.net/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body style="margin: 0; padding: 0; background-color: var(--negro2);">
+    <!-- ScrollHappyGhast inicio -->
+    <div id="scrollContainer" class="scroll-container">
+        <div class="content">
+            <section id="home">
+            <div class="main-container">
+                
+                <!-- Navegacion -->
+                <nav class="navBtn-container">
+                    <a href="#home" class="navBtn-item" id="navBtn-home">
+                        <img src="assets/homeNormal.svg" class="navBtn-icon-home navBtn-state-normal" alt="Home" />
+                        <img src="assets/homeHover.svg" class="navBtn-icon-home navBtn-state-hover" alt="Home Hover" />
+                        <img src="assets/homeClick.svg" class="navBtn-icon-home navBtn-state-active" alt="Home Active" />
+                    </a>
+                    <a href="#rules" class="navBtn-item" id="navBtn-rules">
+                        <img src="assets/rulesNormal.svg" class="navBtn-icon-rules navBtn-state-normal" alt="Rules" />
+                        <img src="assets/rulesHover.svg" class="navBtn-icon-rules navBtn-state-hover" alt="Rules Hover" />
+                        <img src="assets/rulesClick.svg" class="navBtn-icon-rules navBtn-state-active" alt="Rules Active" />
+                    </a>
+                    <a href="#mods" class="navBtn-item" id="navBtn-mods">
+                        <img src="assets/modsNormal.svg" class="navBtn-icon-mods navBtn-state-normal" alt="Mods" />
+                        <img src="assets/modsHover.svg" class="navBtn-icon-mods navBtn-state-hover" alt="Mods Hover" />
+                        <img src="assets/modsClick.svg" class="navBtn-icon-mods navBtn-state-active" alt="Mods Active" />
+                    </a>
+                    </nav>
+
+
+                <!-- Menu Móvil -->
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <img id="burgerIcon" src="assets/burguer.svg" alt="Menú" />
+                    </div>
+                    <ul id="mobileMenu">
+                        <li><a href="/index.html">
+                            <span class="fuenteMenuMovil">Home</span>
+                        </a></li>
+                        <li><a href="/noticias.html">
+                            <span class="fuenteMenuMovil">Noticias</span>
+                        </a></li>
+                        <li><a href="/mapa.html">
+                            <span class="fuenteMenuMovil">Mapa</span>
+                        </a></li>
+                        <li><a href="/propaganda.html">
+                            <span class="fuenteMenuMovil">Propaganda</span>
+                        </a></li>
+                        <li><a href="/facciones.html">
+                            <span class="fuenteMenuMovil">Facciones</span>
+                        </a></li>
+                        <li><a href="/donar.html">
+                            <span class="fuenteMenuMovil">Donar</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Menu Home seleccionado -->
+                <nav class="menuH" id="menu">
+                    <ul>
+                        <li class="boton-landing-menu">
+                            <a href="/index.html" class="elementoMenu">
+                                <span class="fuenteMenu">Home</span> 
+                                <img src="assets/MenuClick.svg" alt="Home Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/noticias.html" class="elementoMenu">
+                                <span class="fuenteMenu">Noticias</span>
+                                <img src="assets/MenuNormal.svg" alt="Noticias Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="mapa.html" class="elementoMenu">
+                                <span class="fuenteMenu">Mapa</span>
+                                <img src="assets/MenuNormal.svg" alt="Mapa Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/propaganda.html" class="elementoMenu">
+                                <span class="fuenteMenu">Propaganda</span>
+                                <img src="assets/MenuNormal.svg" alt="Propaganda Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/facciones.html" class="elementoMenu">
+                                <span class="fuenteMenu">Facciones</span> 
+                                <img src="assets/MenuNormal.svg" alt="Facciones Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/donar.html" class="elementoMenu">
+                                <span class="fuenteMenu">Donar</span>
+                                <img src="assets/MenuNormal.svg" alt="donar Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Redes Sociales -->
+                <nav class="redes-sociales-container">
+                    <ul class="redes-sociales">
+                        <li><a href="https://discord.gg/bF2C9TygGX" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/DiscordNormal.svg" alt="Instagram" class="icono-redes discord">
+                        </a></li>
+                        <li><a href="https://www.tiktok.com/@ancientlandsoficial" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/TiktokNormal.svg" alt="TikTok" class="icono-redes tiktok">
+                        </a></li>
+                        <li><a href="https://www.youtube.com/@AncientLands-w2v5n" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/YoutubeNormal.svg" alt="YouTube" class="icono-redes youtube">
+                        </a></li>
+                        <li><a href="https://www.instagram.com/ancientlandsoficial/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/InstagramNormal.svg" alt="Instagram" class="icono-redes instagram" instagram>
+                        </a></li>
+                    </ul>
+                
+                
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Logo AncientLands" class="logo-fijo">
+                </a>
+            </div>
+            </section>
+
+<!-- Reglas -->
+<section id="rules">
+    <div class="frameReglas">
+        <div class="columnasReglas">
+        <div class="group-wrapper">
+            <div class="group">
+                <div class="overlap">
+                    <div class="overlap-group">
+                    <div class="reglas">
+                        <div class="divprimero">
+                        <div classtituloMinecraft class="tituloMinecraft text-wrapper">NO REDSTONE</div>
+                        <div class="frame-wrapper">
+                            <div class="div-2">
+                            <div class="div-3">
+                                <img class="img" src="assets/lag.svg" />
+                                <div class="listaMinecraft text-wrapper-2">menos lag</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/roleplay.svg" />
+                                <div class="listaMinecraft text-wrapper-2">más roleplay</div>
+                            </div>
+                            <div class="div-4">
+                                <div class="ph-sword">
+                                <img class="game-icons-round" src="assets/trabajo.svg" />
+                                </div>
+                                <div class="listaMinecraft text-wrapper-2">trabajo real</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/inflacion.svg" />
+                                <div class="listaMinecraft text-wrapper-2">menos inflación</div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="div-5">
+                        <p class="tituloMinecraft text-wrapper-3">PRHOBIDAS LAS GRANJAS DE <br />MOBS</p>
+                        <div class="frame-wrapper">
+                            <div class="div-2">
+                            <div class="div-3">
+                                <img class="img" src="assets/lag.svg" />
+                                <div class="listaMinecraft text-wrapper-2">menos lag</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/roleplay.svg" />
+                                <div class="listaMinecraft text-wrapper-2">más roleplay</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/combate.svg" />
+                                <div class="listaMinecraft text-wrapper-2">combate real</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/inflacion.svg" />
+                                <div class="listaMinecraft text-wrapper-2">menos inflación</div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="div-6">
+                        <div class="tituloMinecraft text-wrapper-3">ALDEANOS LIBRES</div>
+                        <div class="frame-wrapper">
+                            <div class="div-2">
+                            <div class="div-4">
+                                <img class="img" src="assets/inflacion.svg" />
+                                <div class="listaMinecraft text-wrapper-2">menos inflación</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/roleplay.svg" />
+                                <div class="listaMinecraft text-wrapper-2">más roleplay</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/ciudades.svg" />
+                                <div class="listaMinecraft text-wrapper-2">ciudades más inmersivas</div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="div-7">
+                        <p class="tituloMinecraft text-wrapper-3">
+                            Prohibido el grifeo, el pvp y el robo sin que las facciones estén de acuerdo
+                        </p>
+                        <div class="frame-wrapper">
+                            <div class="div-2">
+                            <div class="div-4">
+                                <div class="ph-sword">
+                                <img class="img" src="assets/agradable.svg" />
+                                </div>
+                                <div class="listaMinecraft text-wrapper-2">servidor más agradable</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/ciudades.svg" />
+                                <div class="listaMinecraft text-wrapper-2">ciudades más estéticas</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/combate.svg" />
+                                <div class="listaMinecraft text-wrapper-2">combate real</div>
+                            </div>
+                            <div class="div-4">
+                                <img class="img" src="assets/roleplay.svg" />
+                                <div class="listaMinecraft text-wrapper-2">más roleplay</div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="decoradorReglas text-wrapper-4">REGLAS</div>
+                    </div>
+                    <p class="decoradorCodificado p">Los dioses protegen a los justos</p>
+                </div>
+                <div class="reglas-2">
+                    <div class="div-8">
+                    <p class="el-uso-del-redstone">
+                        <span class="tituloMinecraft span">El uso del redstone</span>
+                        <span class="text-wrapper-5">&nbsp;</span>
+                        <span class="tituloMinecraft span">está desactivado</span>
+                        <span class="tituloMinecraft text-wrapper-5">
+                        en el servidor. Las producciones se deben hacer a mano. Quizás sea el momento ideal para atrapar a una
+                        tripulación de piratas y hacerlos tus esclavos.</span
+                        >
+                    </p>
+                    <img class="image" src="assets/redstone.png" />
+                    </div>
+                    <div class="div-9">
+                    <p class="los-monstruos-han-de">
+                        <span class="tituloMinecraft text-wrapper-5"
+                        >Los monstruos han de morir por tu espada, no por un sistema. Tanto las
+                        </span>
+                        <span class="tituloMinecraft span">automáticas como las manuales están prohibidas</span>
+                        <span class="tituloMinecraft text-wrapper-5">. Si quieres pólvora, tendrás que ensuciarte las manos.</span>
+                    </p>
+                    <img class="image" src="assets/mobs.png" />
+                    </div>
+                    <img class="image-2" src="assets/tradinghall.png" />
+                    <img class="image-3" src="assets/wars.png" />
+                    <p class="cada-aldeano-merece">
+                    <span class="tituloMinecraft text-wrapper-5">Cada aldeano merece una casa, un puesto de trabajo y una historia. </span>
+                    <span class="tituloMinecraft span">No pueden vivir encerrados</span>
+                    <span class="tituloMinecraft text-wrapper-5">
+                        como ganado: deben tener espacio para moverse, trabajar, descansar y vivir su propia vida.</span
+                    >
+                    </p>
+                    <p class="cada-facci-n-ha-de">
+                    <span class="tituloMinecraft text-wrapper-6"
+                        >Cada facción ha de establecer su estado diplomático general y particular</span
+                    >
+                    <span class="tituloMinecraft text-wrapper-5">
+                        hacia el resto de facciones, desde la absoluta agresividad indiscriminada, hostilidad solo fuera de las
+                        fronteras hasta la más completa neutralidad ha de ser respetada por todos.</span
+                    >
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section id="mods"></section>
+            
+        </div>
+        <!-- finalScroll -->
+    </div>
+    <div class="custom-scrollbar" id="customScrollbar">
+        <img src="/assets/Happy_Ghast_Blue_Harness_Goggles_Up_Leashed_JE1_BE1.webp" alt="Ghast Scroll" />
+    </div>
+    
+    
+    
+</body>
+</html>

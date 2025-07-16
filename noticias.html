@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Últimas noticias y actualizaciones del servidor AncientLands." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Estilos e íconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="noticias.css" />
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #000;">
+    <!-- ScrollHappyGhast inicio -->
+    <div id="scrollContainer" class="scroll-container">
+        <div class="content">
+            <div class="main-container">
+                <!-- Menu Móvil -->
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <img id="burgerIcon" src="assets/burguer.svg" alt="Menú" />
+                    </div>
+                    <ul id="mobileMenu">
+                        <li><a href="/index.html">
+                            <span class="fuenteMenuMovil">Home</span>
+                        </a></li>
+                        <li><a href="/noticias.html">
+                            <span class="fuenteMenuMovil">Noticias</span>
+                        </a></li>
+                        <li><a href="/mapa.html">
+                            <span class="fuenteMenuMovil">Mapa</span>
+                        </a></li>
+                        <li><a href="/propaganda.html">
+                            <span class="fuenteMenuMovil">Propaganda</span>
+                        </a></li>
+                        <li><a href="/facciones.html">
+                            <span class="fuenteMenuMovil">Facciones</span>
+                        </a></li>
+                        <li><a href="/donar.html">
+                            <span class="fuenteMenuMovil">Donar</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Menu Home seleccionado -->
+                <nav class="menuH" id="menu">
+                    <ul>
+                        <li class="boton-landing-menu">
+                            <a href="/index.html" class="elementoMenu">
+                                <span class="fuenteMenu">Home</span> 
+                                <img src="assets/MenuNormal.svg" alt="Home Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/noticias.html" class="elementoMenu">
+                                <span class="fuenteMenu">Noticias</span>
+                                <img src="assets/MenuClick.svg" alt="Noticias Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="mapa.html" class="elementoMenu">
+                                <span class="fuenteMenu">Mapa</span>
+                                <img src="assets/MenuNormal.svg" alt="Mapa Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/propaganda.html" class="elementoMenu">
+                                <span class="fuenteMenu">Propaganda</span>
+                                <img src="assets/MenuNormal.svg" alt="Propaganda Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/facciones.html" class="elementoMenu">
+                                <span class="fuenteMenu">Facciones</span> 
+                                <img src="assets/MenuNormal.svg" alt="Facciones Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/donar.html" class="elementoMenu">
+                                <span class="fuenteMenu">Donar</span>
+                                <img src="assets/MenuNormal.svg" alt="donar Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Periódico -->
+                <section class="noticias-periodico" aria-label="Noticias destacadas">
+                    <figure>
+                        <img src="assets/PeriodicoEjemplo01.png" alt="Primer Períodico próximamente" />
+                        <figcaption></figcaption>
+                    </figure>
+                </section>
+                
+                
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Logo AncientLands" class="logo-fijo">
+                </a>
+            </div>
+            
+        </div>
+        <!-- finalScroll -->
+    </div>
+    <div class="custom-scrollbar" id="customScrollbar">
+        <img src="/assets/Happy_Ghast_Blue_Harness_Goggles_Up_Leashed_JE1_BE1.webp" alt="Ghast Scroll" />
+    </div>
+    
+    
+    
+</body>
+</html>
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donar</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Apoya a AncientLands y recibe beneficios exclusivos. Haz una donación para mantener el servidor y desbloquear recompensas únicas dentro del juego." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Estilos e íconos -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="donar.css" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</head>
+<body style="margin: 0; padding: 0; background-color: #000;">
+    <!-- ScrollHappyGhast inicio -->
+    <div id="scrollContainer" class="scroll-container">
+        <div class="content">
+            <div class="main-container">
+                
+                
+                <!-- Menu Móvil -->
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <img id="burgerIcon" src="assets/burguer.svg" alt="Menú" />
+                    </div>
+                    <ul id="mobileMenu">
+                        <li><a href="/index.html">
+                            <span class="fuenteMenuMovil">Home</span>
+                        </a></li>
+                        <li><a href="/noticias.html">
+                            <span class="fuenteMenuMovil">Noticias</span>
+                        </a></li>
+                        <li><a href="/mapa.html">
+                            <span class="fuenteMenuMovil">Mapa</span>
+                        </a></li>
+                        <li><a href="/propaganda.html">
+                            <span class="fuenteMenuMovil">Propaganda</span>
+                        </a></li>
+                        <li><a href="/facciones.html">
+                            <span class="fuenteMenuMovil">Facciones</span>
+                        </a></li>
+                        <li><a href="/donar.html">
+                            <span class="fuenteMenuMovil">Donar</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Menu Home seleccionado -->
+                <nav class="menuH" id="menu">
+                    <ul>
+                        <li class="boton-landing-menu">
+                            <a href="/index.html" class="elementoMenu">
+                                <span class="fuenteMenu">Home</span> 
+                                <img src="assets/MenuNormal.svg" alt="Home Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/noticias.html" class="elementoMenu">
+                                <span class="fuenteMenu">Noticias</span>
+                                <img src="assets/MenuNormal.svg" alt="Noticias Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="mapa.html" class="elementoMenu">
+                                <span class="fuenteMenu">Mapa</span>
+                                <img src="assets/MenuNormal.svg" alt="Mapa Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/propaganda.html" class="elementoMenu">
+                                <span class="fuenteMenu">Propaganda</span>
+                                <img src="assets/MenuNormal.svg" alt="Propaganda Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/facciones.html" class="elementoMenu">
+                                <span class="fuenteMenu">Facciones</span> 
+                                <img src="assets/MenuNormal.svg" alt="Facciones Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/donar.html" class="elementoMenu">
+                                <span class="fuenteMenu">Donar</span>
+                                <img src="assets/MenuClick.svg" alt="donar Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Donaciones -->
+                <div class="donacioncolumna-inferior">
+                      <div class="donacioncolumna-superior">
+                        <div class="donacionframe">
+                          <div class="donaciondiv">
+                            <div class="donaciondonaciones-frame">
+                              <div class="donaciondonaciones"><img class="vector" src="assets/Vector.png" /></div>
+                            </div>
+                            <div class="donacioncantidad-donaciones">
+                              <div class="donaciontext-wrapper Fuente16Minecraft">0</div>
+                              <div class="donaciontext-wrapper-2 Fuente16Minecraft">Donaciones</div>
+                            </div>
+                          </div>
+                          <div class="donaciondiv">
+                            <img class="donacionmes-frame" src="assets/Mes.svg" />
+                            <div class="donacioneste-mes-frame">
+                              <div class="donaciontext-wrapper-3 Fuente16Minecraft">0</div>
+                              <div class="donaciontext-wrapper-4 Fuente16Minecraft">Este mes</div>
+                            </div>
+                          </div>
+                          <div class="donaciondiv-2">
+                            <div class="donaciondiv-wrapper">
+                              <div class="donacionellipse-wrapper"><img src="assets/MaxDonador.png" class="ellipse"></img></div>
+                            </div>
+                            <div class="donaciondiv-3">
+                              <p class="donacionp Fuente16Minecraft">Jugador que más ha donado</p>
+                              <div class="donaciontext-wrapper-5 Fuente24Minecraft5">Nombre</div>
+                            </div>
+                          </div>
+                          <div class="donaciondiv-2">
+                            <div class="donaciondiv-wrapper">
+                              <div class="ellipse-wrapper"><img src="assets/FaccionDonadora.png" class="ellipse"></img></div>
+                            </div>
+                            <div class="donaciondiv-3">
+                              <p class="donacionp Fuente16Minecraft">Facción que más ha donado</p>
+                              <div class="donaciontext-wrapper-6 Fuente24Minecraft">Nombre</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="donaciondonaciones-texto">
+                          <div class="donaciondonaciones-texto-2">
+                            <img class="donaciondonacion" src="assets/Donacion.png" />
+                            <p class="donaciontext-wrapper-7 Fuente24Minecraft">
+                              AncientLands no es pay to win, todas las recompensas son cosméticas o sociales. Las donaciones se utilizan
+                              para mantener el servidor, la web, pagar a artistas, crear eventos y mucho más.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="donacionplanes-donaciones">
+                        <div class="donaciondiv-4">
+                          <a href="https://buymeacoffee.com/ancientlans/e/432484" class="donaciontortilla-patatas" target="_blank">
+                            <img class="donacionimg" src="assets/tortila.png" />
+                            <div class="donaciondiv-5">
+                              <div class="donaciondiv-6">
+                                <div class="donaciontext-wrapper-8 Fuente24MinecraftN">Tortilla de patatas</div>
+                                <div class="donaciondiv-7">
+                                  <p class="donaciontext-wrapper-9 Fuente16Minecraft">Color en Discord y minecraft</p>
+                                  <p class="donaciontext-wrapper-10 Fuente16Minecraft">Apodo, emojis y stickers externos</p>
+                                  <div class="donaciontext-wrapper-10 Fuente16Minecraft">Acceso al canal vip</div>
+                                </div>
+                              </div>
+                              <div class="donaciondiv-wrapper-2"><div class="donaciontext-wrapper-11 Fuente24MinecraftN">1.49€</div></div>
+                            </div>
+                          </a>
+                          <a href="https://buymeacoffee.com/ancientlans/e/432488" class="donaciongazpacho" target="_blank">
+                            <img class="donacionimg" src="assets/gazpacho.png" />
+                            <div class="donaciondiv-5">
+                              <div class="donaciondiv-6">
+                                <div class="donaciontext-wrapper-8 Fuente24MinecraftN">Gazpacho Andaluz</div>
+                                <div class="donaciondiv-7">
+                                  <p class="donaciontext-wrapper-9 Fuente16Minecraft">Color en Discord y minecraft</p>
+                                  <p class="donaciontext-wrapper-10 Fuente16Minecraft">Apodo, emojis y stickers externos</p>
+                                  <div class="donaciontext-wrapper-10 Fuente16Minecraft">Acceso al canal vip</div>
+                                </div>
+                              </div>
+                              <div class="donaciondiv-wrapper-2"><div class="donaciontext-wrapper-11 Fuente24MinecraftN">3.49€</div></div>
+                            </div>
+                          </a>
+                          <a href="https://buymeacoffee.com/ancientlans/e/432489" class="donacionpaella" target="_blank">
+                            <img class="donacionimg" src="assets/paella.png" />
+                            <div class="donaciondiv-5">
+                              <div class="donaciondiv-6">
+                                <div class="donaciontext-wrapper-8 Fuente24MinecraftN">Paella Valenciana</div>
+                                <div class="donacionpaella-descripcion">
+                                  <div class="donaciondiv-7">
+                                    <p class="donaciontext-wrapper-9 Fuente16Minecraft">Color en Discord y minecraft</p>
+                                    <p class="donaciontext-wrapper-10 Fuente16Minecraft">Apodo, emojis y stickers externos</p>
+                                    <div class="donaciontext-wrapper-10 Fuente16Minecraft">Acceso al canal vip</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="donacionpaella-precio"><div class="donaciontext-wrapper-11 Fuente24MinecraftN">6.99€</div></div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="donaciondiv-4">
+                          <a href="https://buymeacoffee.com/ancientlans/e/432490" class="donacionfabada" target="_blank">
+                            <img class="donacionimg" src="assets/fabada.png" />
+                            <div class="donaciondiv-5">
+                              <div class="donaciondiv-6">
+                                <div class="donaciontext-wrapper-8 Fuente24MinecraftN">Fabada Asturiana</div>
+                                <div class="donaciondiv-7">
+                                  <p class="donaciontext-wrapper-9 Fuente16Minecraft">Color en Discord y minecraft</p>
+                                  <p class="donaciontext-wrapper-10 Fuente16Minecraft">Apodo, emojis y stickers externos</p>
+                                  <div class="donaciontext-wrapper-10 Fuente16Minecraft">Acceso al canal vip</div>
+                                </div>
+                              </div>
+                              <div class="donaciondiv-wrapper-2"><div class="donaciontext-wrapper-11 Fuente24MinecraftN">9.99€</div></div>
+                            </div>
+                          </a>
+                          <a href="https://buymeacoffee.com/ancientlans/e/432491" class="donacionpulpo" target="_blank">
+                            <img class="donacionimg" src="assets/pulpo.png" />
+                            <div class="donaciondiv-5">
+                              <div class="donaciondiv-6">
+                                <div class="donaciontext-wrapper-8 Fuente24MinecraftN">Pulpo a la Gallega</div>
+                                <div class="donaciondiv-7">
+                                  <p class="donaciontext-wrapper-9 Fuente16Minecraft">Color en Discord y minecraft</p>
+                                  <p class="donaciontext-wrapper-10 Fuente16Minecraft">Apodo, emojis y stickers externos</p>
+                                  <div class="donaciontext-wrapper-10 Fuente16Minecraft">Acceso al canal vip</div>
+                                </div>
+                              </div>
+                              <div class="donacionpulpo-precio"><div class="donaciontext-wrapper-12 Fuente24MinecraftN">14.99€</div></div>
+                            </div>
+                          </a>
+                          <a href="https://buymeacoffee.com/ancientlans/e/432496" class="donacionjamn">
+                            <img class="donacionimg" src="assets/jamon.png" />
+                            <div class="donacionjamon-frame-externo">
+                              <div class="donaciondiv-6jamon">
+                                <div class="donaciontext-wrapper-8 Fuente24MinecraftN">Jamón Ibérico de Bellota</div>
+                                <div class="donaciondiv-7">
+                                  <p class="donaciontext-wrapper-9 Fuente16Minecraft">Color en Discord y minecraft</p>
+                                  <p class="donaciontext-wrapper-10 Fuente16Minecraft">Apodo, emojis y stickers externos</p>
+                                  <div class="donaciontext-wrapper-10 Fuente16Minecraft">Acceso al canal vip</div>
+                                </div>
+                              </div>
+                              <div class="donacionjamon-precio"><div class="donaciontext-wrapper-13 Fuente24MinecraftN">29.99€</div></div>
+                            </div>
+                        </a>
+                        </div>
+                      </div>
+                    </div>
+                
+                
+                
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Logo AncientLands" class="logo-fijo">
+                </a>
+            </div>
+            
+        </div>
+        <!-- finalScroll -->
+    </div>
+    <div class="custom-scrollbar" id="customScrollbar">
+        <img src="/assets/Happy_Ghast_Blue_Harness_Goggles_Up_Leashed_JE1_BE1.webp" alt="Ghast Scroll" />
+    </div>
+    
+    
+    
+</body>
+</html>

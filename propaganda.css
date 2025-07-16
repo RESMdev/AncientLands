@@ -1,0 +1,445 @@
+/*Hovers para modelo sin sufijo B*/
+.elementoMenu.icono-menu {
+  display: inline-block;
+  width: 24px;   /* tamaño de la imagen */
+  height: 24px;
+  background-image: url('assets/MenuNormal.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle; /* para alinearse con texto */
+  transition: background-image 0.8s ease-out;
+}
+
+.elementoMenu.icono-menu:hover {
+  background-image: url('assets/MenuHover.svg'); /* o MenuHoverB.svg si quieres hover B */
+}
+
+.icono-menu {
+  display: block;
+  transition: opacity 0.8s ease-out;
+}
+
+.hover-image {
+  display: none;
+  transition: opacity 0.8s ease-out;
+}
+
+.elementoMenu:hover .icono-menu {
+  display: none;
+  opacity: 0;
+}
+
+.elementoMenu:hover .hover-image {
+  display: block;
+  opacity: 1;
+}
+
+/* Estilos propaganda */
+
+
+.Propagandaframe .Propagandaframe-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.Propagandaframe .Propagandadiv {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 1;
+  flex-direction: row;
+  align-self: stretch;
+  flex-grow: 1;
+  justify-content: center;
+  
+  width: auto;
+  height: 83.59vh;
+}
+
+.Propagandaframe .Propagandadiv-2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+}
+
+.Propagandaframe .Propagandapropaganda {
+  position: relative;
+  width: auto;
+  height: 53.91vh;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.Propagandaframe .Propagandadiv-3 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 53.91vh;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  border-radius: 32px;
+}
+
+.Propagandaframe .Propagandadiv-4 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: auto;
+  height: 9.375vh;
+  flex: 0 0 auto;
+}
+
+.Propagandaframe .Propagandaimage {
+  position: relative;
+  width: 	auto;
+  height: 9.375vh;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.Propagandaframe .Propagandaimg {
+  position: relative;
+  width: auto;
+  height: 42.97vh;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.Propagandaframe .Propagandadiv-5 {
+  display: inline-flex;
+  flex-direction: column;
+  width: 26.11vw;
+  height: 21.09vh;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+  gap: 16px;
+}
+
+.Propagandaframe .Propagandacarrusel-wrapper {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 30px;
+}
+
+.Propagandaframe .Propagandacarrusel {
+  display: inline-flex;
+  flex-direction: column;
+  height: 21.09vh;
+  width: auto;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #14ffec;
+  border-radius: 32px;
+}
+
+.Propagandaframe .Propagandadiv-6 {
+  position: relative;
+  width: 30.00;
+  height: 144px;
+}
+
+.Propagandaframe .Propagandacarrusel-2 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 624px;
+  width: 376px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 32px;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 255, 236, 1) 64%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.Propagandaframe .Propagandadiv-7 {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.Propagandaframe .Propagandarectangle {
+  position: relative;
+  align-self: stretch;
+  width: 188px;
+}
+
+.Propagandaframe .Propagandadiv-8 {
+  position: relative;
+  width: 26.11vw;
+  height: auto;
+  border-radius: 32px;
+}
+
+.Propagandaframe .Propagandadiv-9 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  position: relative;
+  width: auto;
+  height: 28.125vh;
+}
+
+.Propagandaframe .Propagandapropaganda-2 {
+  width: auto;
+  height: 28.125vh;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.Propagandaframe .Propagandapropaganda-3 {
+  width: auto;
+  height: 28.125vh;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+
+.Propagandacolumna{
+  width: auto;
+  height: 83.59vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Historias1 */
+.story-container {
+width: 376px;
+  height: 216px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress-bar-container {
+  position: absolute;
+  bottom: 0px;         
+  left: 24px;           
+  width: 188px;
+  height: 56px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.progress-bar {
+  width: 36px;
+  height: 8px;
+  background: rgba(0, 0, 0);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  flex: none; /* para que no se estire */
+}
+
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: white;
+  animation: none;
+  left: 0;
+  top: 0;
+}
+
+.progress-bar.active::before {
+  animation: fillBar 5s linear forwards;
+}
+
+@keyframes fillBar {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.story-content {
+  display: none;
+  padding: 80px 20px 20px;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.story-content.active {
+  display: block;
+}
+
+.discord-button {
+  position: absolute;
+  bottom: 96px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: #636b6b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discord-button img {
+  width: 32px;
+  height: 32px;
+}
+
+.historia-1 {
+  background-image: url("assets/CarruselPequenyo01.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.historia-2 {
+  background-image: url("assets/CarruselPequenyo02.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.historia-3 {
+  background-image: url("assets/CarruselPequenyo03.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* HistoriasV2 */
+.story2-container {
+  width: 376px;
+  height: 624px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress2-bar-container {
+  position: relative;
+  bottom: 0px;
+  left: 24px;
+  width: 188px;
+  height: 56px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.progress2-bar {
+  width: 36px;
+  height: 8px;
+  background: rgba(0, 0, 0);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  flex: none;
+}
+
+.progress2-bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: white;
+  animation: none;
+  left: 0;
+  top: 0;
+}
+
+.progress2-bar.active::before {
+  animation: fillBar2 5s linear forwards;
+}
+
+@keyframes fillBar2 {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.story2-content {
+  display: none;
+  padding: 80px 20px 20px;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.story2-content.active {
+  display: block;
+}
+
+.discord2-button {
+  position: absolute;
+  bottom: 96px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: #636b6b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discord2-button img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Fondos personalizados para las historias */
+.story2-1 {
+  background-image: url("assets/CarruselGrande01.png");
+}
+.story2-2 {
+  background-image: url("assets/CarruselGrande02.png");
+}
+.story2-3 {
+  background-image: url("assets/CarruselGrande03.png");
+}
+.story2-4 {
+  background-image: url("assets/CarruselGrande04.png");
+}
+.story2-5 {
+  background-image: url("assets/CarruselGrande05.png");
+}
+
+.main-container{
+  height: 90vh;
+}
+

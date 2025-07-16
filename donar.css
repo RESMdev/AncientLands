@@ -1,0 +1,708 @@
+/*Hovers para modelo sin sufijo B*/
+.elementoMenu .icono-menu {
+  display: inline-block;
+  width: 24px;   /* tamaño de la imagen */
+  height: 24px;
+  background-image: url('assets/MenuNormal.donacionsvg');
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle; /* para alinearse con texto */
+  transition: background-image 0.8s ease-out;
+}
+
+.elementoMenu .icono-menu:hover {
+  background-image: url('assets/MenuHover.donacionsvg'); /* o MenuHoverB.donacionsvg si quieres hover B */
+}
+
+.icono-menu {
+  display: block;
+  transition: opacity 0.s ease-out;
+}
+
+.hover-image {
+  display: none;
+  transition: opacity 0.8s ease-out;
+}
+
+.elementoMenu:hover .icono-menu {
+  display: none;
+  opacity: 0;
+}
+
+.elementoMenu:hover .hover-image {
+  display: block;
+  opacity: 1;
+}
+
+/* Estilos donaciones */
+.donacioncolumna-inferior {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  
+}
+
+.donacioncolumna-inferior .donacioncolumna-superior {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.donacioncolumna-inferior .donacionframe {
+  align-items: center;
+  height: 80px;
+  width: 1032px;
+  gap: 8px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.donacioncolumna-inferior .donaciondiv {
+  display: flex;
+  width: 176px;
+  height: 7.81vh;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0px 16px;
+  position: relative;
+  background-color: #222222;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.donacioncolumna-inferior .donaciondonaciones-frame {
+  display: flex;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+  position: relative;
+  margin-top: -10.px;
+  margin-bottom: -10.px;
+}
+
+.donacioncolumna-inferior .donaciondonaciones {
+  display: flex;
+  flex-direction: column;
+  width: 39px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.donacioncolumna-inferior .donacionvector {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+
+.donacioncolumna-inferior .donacioncantidad-donaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -4.50px;
+  margin-bottom: -4.50px;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper {
+  color: #fff712;
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-2 {
+  position: relative;
+  width: 107px;
+  margin-left: -9.50px;
+  margin-right: -9.50px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donacionmes-frame {
+  position: relative;
+  width: 40px;
+  margin-top: -8.43px;
+  margin-bottom: -8.42px;
+}
+
+.donacioncolumna-inferior .donacioneste-mes-frame {
+  display: flex;
+  flex-direction: column;
+  height: 41px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -4.50px;
+  margin-bottom: -4.50px;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-3 {
+  color: var(--c);
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-4 {
+  position: relative;
+  width: 107px;
+  margin-right: -19.00px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciondiv-2 {
+  display: flex;
+  width: 328px;
+  height: 7.81vh;
+  justify-content: center;
+  gap: 0px;
+  padding: 0px 16px;
+  background-color: #222222;
+  border-radius: 16px;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+.donacioncolumna-inferior .donaciondiv-wrapper {
+  display: flex;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+  position: relative;
+  margin-top: -14.00px;
+  margin-bottom: -14.00px;
+}
+
+.donacioncolumna-inferior .donacionellipse-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 27px;
+  align-items: center;
+  position: relative;
+}
+
+.donacioncolumna-inferior .donacionellipse {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-left: -6.50px;
+  margin-right: -6.50px;
+  background-color: #000000;
+  border-radius: 20px;
+}
+
+.donacioncolumna-inferior .donaciondiv-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -8.00px;
+  margin-bottom: -8.00px;
+  
+}
+
+.donaciondiv-3 p,
+.donaciondiv-3 div {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.donacioncolumna-inferior .donacionp {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-5 {
+  color: var(--morado);
+  position: relative;
+  align-self: stretch;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-6 {
+  color: var(--resmdev)!important;
+  position: relative;
+  align-self: stretch;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciondonaciones-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 1032px;
+  height: 268px;
+  flex: 0 0 auto;
+}
+
+.donacioncolumna-inferior .donaciondonaciones-texto-2 {
+  display: flex;
+  height: 268px;
+  align-items: center;
+  gap: 56px;
+  padding: 0px 72px;
+  position: relative;
+  align-self: stretch;
+  width: auto;
+  background-color: #222222;
+  border-radius: 24px;
+}
+
+.donacioncolumna-inferior .donaciondonacion {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  object-fit: cover;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-7 {
+  position: relative;
+  width: 684px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donacionplanes-donaciones {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  height: 464px;
+  width: 1032px;
+}
+
+.donacionplanes-donaciones{
+  height: 45.31vh;
+  width: auto;
+}
+
+.donacioncolumna-inferior .donaciondiv-4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  height: 464px;
+  width: 508px;
+}
+
+.donacioncolumna-inferior .donaciontortilla-patatas {
+  display: flex;
+  width: auto;
+  height: 144px;
+  width: 508px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 10px 32px;
+  position: relative;
+  background-color: #765656;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0px none;
+  box-sizing: border-box;
+}
+
+.donacioncolumna-inferior .donacionimg {
+  position: relative;
+  width: auto;
+  height: 7.81vh;
+  object-fit: cover;
+}
+
+.donacioncolumna-inferior .donaciondiv-5 {
+  display: inline-flex;
+  align-self: stretch;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+  gap: 24px;
+}
+
+.donacioncolumna-inferior .donaciondiv-6 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.px;
+  font-family: "Minecraft-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciondiv-7 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-10 {
+  position: relative;
+  width: fit-content;
+  margin-top: -2px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.donacioncolumna-inferior .donaciondiv-wrapper-2 {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  font-family: "Minecraft-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donacioncolumna-inferior .donaciongazpacho {
+  display: flex;
+  height: 144px;
+  width: 508px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 10px 32px;
+  position: relative;
+  background-color: #ff5533;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0px none;
+  box-sizing: border-box;
+
+}
+
+.donacioncolumna-inferior .donacionpaella {
+  display: flex;
+  height: 144px;
+  width: 508px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 10px 32px;
+  position: relative;
+  background-color: #ffaa00;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0px none;
+  box-sizing: border-box;
+}
+
+.donacioncolumna-inferior .donacionpaella-descripcion {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.donacioncolumna-inferior .donacionpaella-precio {
+  
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+
+.donacioncolumna-inferior .donacionfabada {
+  display: flex;
+  height: 144px;
+  width: 508px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 10px 32px;
+  position: relative;
+  background-color: #9e005f;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0px none;
+  box-sizing: border-box;
+}
+
+.donacioncolumna-inferior .donacionpulpo {
+  display: flex;
+  height: 144px;
+  width: 508px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 10px 32px;
+  position: relative;
+  background-color: #2f00f2;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0px none;
+  box-sizing: border-box;
+}
+
+.donacioncolumna-inferior .donacionpulpo-precio {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 9px;
+  padding: 0px 1px;
+  position: relative;
+  align-self: stretch;
+  
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-12 {
+  margin-left: -18.00px;
+  position: relative;
+  width: fit-content;
+  font-family: "Minecraft-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  
+}
+
+.donacioncolumna-inferior .donacionjamn {
+  display: flex;
+  height: 144px;
+  width: 508px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 10px 32px;
+  position: relative;
+  background-color: #8512ff;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0px none;
+  box-sizing: border-box;
+  
+}
+
+.donacioncolumna-inferior .donacionjamon-frame-externo {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+  margin-right: -10.px;
+}
+
+.donacioncolumna-inferior .donacionjamon-precio {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: stretch;
+      position: absolute;
+    bottom: 0px;
+    right: 1550px;
+}
+
+.donacioncolumna-inferior .donaciontext-wrapper-13 {
+  margin-left: -108.px;
+      position: absolute;
+    left: 15vw;
+  width: fit-content;
+  font-family: "Minecraft-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donaciontortilla-patatas:hover,
+.donacionpatatas:hover,
+.donaciongazpacho:hover,
+.donacionpaella:hover,
+.donacionfabada:hover,
+.donacionpulpo:hover,
+.donacionjamn:hover {
+  border: 8px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  box-sizing: border-box; /* para que el borde no afecte el tamaño */
+  transition: border 0.3s ease;
+}
+
+.Fuente24Minecraft{
+font-family: "Minecraft", Helvetica !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  font-size: 24px !important;
+  letter-spacing: 0 !important;
+  line-height: normal !important;
+}
+
+.Fuente24MinecraftN{
+font-family: "Minecraft-n", Helvetica !important;
+font-weight: 700 !important;
+color: #ffffff !important;
+font-size: 24px !important;
+letter-spacing: 0 !important;
+line-height: normal !important;
+}
+
+.Fuente16Minecraft{
+font-family: "Minecraft", Helvetica !important;
+font-weight: 400 !important;
+color: #ffffff;
+font-size: 16px !important;
+letter-spacing: 0 !important;
+line-height: normal !important;
+white-space: nowrap !important;
+}
+
+.Fuente16Minecraft,
+.Fuente24MinecraftN,
+.donaciondiv-6 * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  
+}
+
+
+.donaciondiv-6jamon {
+      display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    width: 100vw;
+}
+
+  .donacionjamon-frame-externo {
+    position: relative;
+    min-height: 100px; /* Ajusta según necesites */
+}
+
+.donacionjamon-precio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.donacionjamon-frame-externo {
+    position: relative;
+    min-height: 100px; /* Ajusta según necesites */
+    padding-right: 8px; /* Añade padding para que el texto no toque el borde */
+}
+
+.donacionjamon-precio {
+    position: absolute;
+    bottom: 0;
+    right: 8px; /* 8px desde el borde derecho */
+    /* left: auto; // Esto no es necesario si no lo tenías definido antes */
+    text-align: right; /* Para alinear el texto a la derecha */
+}

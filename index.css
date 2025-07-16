@@ -1,0 +1,565 @@
+/*Hovers para modelo sin sufijo B*/
+.elementoMenu.icono-menu {
+  display: inline-block;
+  width: 24px;   /* tamaño de la imagen */
+  height: 24px;
+  background-image: url('assets/MenuNormal.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle; /* para alinearse con texto */
+  transition: background-image 0.8s ease-out;
+}
+
+.elementoMenu.icono-menu:hover {
+  background-image: url('assets/MenuHover.svg'); /* o MenuHoverB.svg si quieres hover B */
+}
+
+.icono-menu {
+  display: block;
+  transition: opacity 0.8s ease-out;
+}
+
+.hover-image {
+  display: none;
+  transition: opacity 0.8s ease-out;
+}
+
+.elementoMenu:hover .icono-menu {
+  display: none;
+  opacity: 0;
+}
+
+.elementoMenu:hover .hover-image {
+  display: block;
+  opacity: 1;
+}
+
+/* Redes Sociales */
+.redes-sociales-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.icono-redes {
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+}
+
+/* Hover individual para cada red */
+.icono-redes.discord:hover {
+    content: url('assets/DiscordHover.svg');
+}
+
+.icono-redes.tiktok:hover {
+    content: url('assets/TiktokHover.svg');
+}
+
+.icono-redes.youtube:hover {
+    content: url('assets/YoutubeHover.svg');
+}
+
+.icono-redes.instagram:hover {
+    content: url('assets/InstagramHover.svg');
+}
+
+
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  left: 18px;
+  bottom: 80px;
+}
+
+/* MenuNavegaciones */
+.navBtn-container {
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  gap: 19px;
+  position: fixed;
+  right: 28px;
+  top: 96px;
+  z-index: 9999;
+}
+
+.navBtn-item {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.navBtn-item:hover {
+  background-color: #9747FF;
+}
+
+.navBtn-item img {
+  position: absolute;
+  width: auto;
+  height: 24px;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.navBtn-state-normal {
+  opacity: 1;
+}
+.navBtn-state-hover,
+.navBtn-state-active {
+  opacity: 0;
+}
+
+.navBtn-item:hover .navBtn-state-hover {
+  opacity: 1;
+}
+.navBtn-item:hover .navBtn-state-normal {
+  opacity: 0;
+}
+
+.navBtn-item.active .navBtn-state-active {
+  opacity: 1;
+}
+.navBtn-item.active .navBtn-state-normal,
+.navBtn-item.active .navBtn-state-hover {
+  opacity: 0;
+}
+
+/*Reglas*/
+.frameReglas {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  top: -110px;
+}
+
+.frameReglas .group-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frameReglas .group {
+  position: relative;
+  align-items: center;
+  width: 1308px;
+  height: 1442px;
+  margin-right: -4.00px;
+  gap: 4px;
+}
+
+.frameReglas .overlap {
+  height: 1442px;
+  top: 0;
+  position: absolute;
+  width: 448px;
+  left: 0;
+}
+
+.frameReglas .overlap-group {
+  height: 1430px;
+  top: 12px;
+  position: absolute;
+  width: 448px;
+  left: 0;
+}
+
+.frameReglas .reglas {
+  position: absolute;
+  width: 448px;
+  height: 1379px;
+  top: 51px;
+  left: 0;
+  border-radius: 48px;
+  overflow: hidden;
+  border: 8px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  background: linear-gradient(
+    180deg,
+    rgba(151, 71, 255, 1) 0%,
+    rgba(79, 9, 135, 1) 100%
+  );
+}
+
+.frameReglas .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 50px;
+  left: 54px;
+}
+
+.frameReglas .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frameReglas .frame-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 11px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frameReglas .div-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frameReglas .div-3 {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frameReglas .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.frameReglas .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frameReglas .div-4 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frameReglas .ph-sword {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1px;
+  position: relative;
+}
+
+.frameReglas .game-icons-round {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.frameReglas .div-5 {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 381px;
+  left: 54px;
+}
+
+.frameReglas .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frameReglas .div-6 {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 708px;
+  left: 54px;
+}
+
+.frameReglas .div-7 {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 1035px;
+  left: 54px;
+}
+
+.frameReglas .streamline-health {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+
+.frameReglas .text-wrapper-4 {
+  position: absolute;
+  top: 0;
+  left: 54px;
+  font-family: "Minecraft Evenings-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frameReglas .p {
+  position: absolute;
+  width: 205px;
+  top: 0;
+  left: 241px;
+  font-family: "SGA Smooth-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frameReglas .reglas-2 {
+  position: absolute;
+  width: 816px;
+  height: 1379px;
+  top: 63px;
+  left: 464px;
+  background-color: var(--blanco);
+  border-radius: 48px;
+  overflow: hidden;
+  border: 8px solid;
+  border-color: #8bff12;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.frameReglas .div-8 {
+  display: flex;
+  width: 708px;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 54px;
+  left: 54px;
+}
+
+.frameReglas .el-uso-del-redstone {
+  position: relative;
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frameReglas .span {
+  color: #8512ff;
+}
+
+.frameReglas .text-wrapper-5 {
+  color: #000000;
+}
+
+.frameReglas .image {
+  position: relative;
+  width: 288px;
+  height: 279px;
+}
+
+.frameReglas .div-9 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 381px;
+  left: 54px;
+}
+
+.frameReglas .los-monstruos-han-de {
+  position: relative;
+  width: 396px;
+  margin-top: -1.00px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frameReglas .image-2 {
+  top: 708px;
+  position: absolute;
+  width: 288px;
+  height: 279px;
+  left: 474px;
+}
+
+.frameReglas .image-3 {
+  top: 1035px;
+  position: absolute;
+  width: 288px;
+  height: 279px;
+  left: 474px;
+}
+
+.frameReglas .cada-aldeano-merece {
+  position: absolute;
+  width: 367px;
+  top: 700px;
+  left: 54px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frameReglas .cada-facci-n-ha-de {
+  position: absolute;
+  width: 367px;
+  top: 1027px;
+  left: 54px;
+  font-family: "Minecraft-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frameReglas .text-wrapper-6 {
+  color: #8742cf;
+}
+
+.divprimero{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    align-items: flex-start;
+    gap: 24px;
+    position: absolute;
+    top: 50px;
+    left: 54px;
+}
+
+
+.reglas {
+  margin-right: 8px; /* espacio arriba de reglas-2 */
+}
+.reglas-2 {
+  margin-left: 8px; /* espacio arriba de reglas-2 */
+}
+
+.tituloMinecraft{
+font-family: "Minecraft", Helvetica, sans-serif!important; 
+font-weight: 400!important;
+color: #000000;
+font-size: 24px!important;
+letter-spacing: 0!important;
+line-height: normal!important;    
+}
+
+.listaMinecraft{
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Minecraft", Helvetica!important;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px!important;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;    
+}
+
+.decoradorReglas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Minecraft Evenings", Helvetica!important;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;    
+}
+
+.decoradorCodificado{
+  position: fixed;
+  width: 205px;
+  top: -16px!important;
+  left: 0;
+  font-family: "MinecraftCodigo", Helvetica!important;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;    
+}
+
+.main-container{
+  height: 90vh;
+}

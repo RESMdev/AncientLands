@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mapa</title>
+
+<!-- SEO básico -->
+    <meta name="description" content="Explora el mapa interactivo de AncientLands, descubre territorios, fortalezas de facciones y puntos clave del mundo medieval. ¡Planifica tus conquistas estratégicamente!" />
+    <meta name="robots" content="index, follow" />
+
+<!-- Estilos e íconos -->
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mapa.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Scripts -->
+    <script src="script.js" defer></script>
+
+</head>
+<body style="margin: 0; padding: 0; background-color: #000;">
+    <!-- ScrollHappyGhast inicio -->
+    <div id="scrollContainer" class="scroll-container">
+        <div class="content">
+            <div class="main-container">
+
+                <!-- Mapa Minecraft -->
+                <iframe
+                    class="iframe-map"
+                    src="https://ancientlands.sytes.net/map"
+                    height="100%"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Mapa interactivo AncientLands"
+                ></iframe>
+                
+                
+                <!-- Menu Móvil -->
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <img id="burgerIcon" src="assets/burguer.svg" alt="Menú" />
+                    </div>
+                    <ul id="mobileMenu">
+                        <li><a href="/index.html">
+                            <span class="fuenteMenuMovil">Home</span>
+                        </a></li>
+                        <li><a href="/noticias.html">
+                            <span class="fuenteMenuMovil">Noticias</span>
+                        </a></li>
+                        <li><a href="/mapa.html">
+                            <span class="fuenteMenuMovil">Mapa</span>
+                        </a></li>
+                        <li><a href="/propaganda.html">
+                            <span class="fuenteMenuMovil">Propaganda</span>
+                        </a></li>
+                        <li><a href="/facciones.html">
+                            <span class="fuenteMenuMovil">Facciones</span>
+                        </a></li>
+                        <li><a href="/donar.html">
+                            <span class="fuenteMenuMovil">Donar</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Menu Home seleccionado -->
+                <nav class="menuH" id="menu">
+                    <ul>
+                        <li class="boton-landing-menu">
+                            <a href="/index.html" class="elementoMenu">
+                                <span class="fuenteMenu">Home</span> 
+                                <img src="assets/MenuNormalB.svg" alt="Home Icon" class="icono-menu">
+                                <img src="assets/MenuHoverB.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/noticias.html" class="elementoMenu">
+                                <span class="fuenteMenu">Noticias</span>
+                                <img src="assets/MenuNormalB.svg" alt="Noticias Icon" class="icono-menu">
+                                <img src="assets/MenuHoverB.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="mapa.html" class="elementoMenu">
+                                <span class="fuenteMenu">Mapa</span>
+                                <img src="assets/MenuClickB.svg" alt="Mapa Icon" class="icono-menu">
+                                <img src="assets/MenuHoverB.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/propaganda.html" class="elementoMenu">
+                                <span class="fuenteMenu">Propaganda</span>
+                                <img src="assets/MenuNormalB.svg" alt="Propaganda Icon" class="icono-menu">
+                                <img src="assets/MenuHoverB.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/facciones.html" class="elementoMenu">
+                                <span class="fuenteMenu">Facciones</span> 
+                                <img src="assets/MenuNormalB.svg" alt="Facciones Icon" class="icono-menu">
+                                <img src="assets/MenuHoverB.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/donar.html" class="elementoMenu">
+                                <span class="fuenteMenu">Donar</span>
+                                <img src="assets/MenuNormalB.svg" alt="donar Icon" class="icono-menu">
+                                <img src="assets/MenuHoverB.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                
+                
+                
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Logo AncientLands" class="logo-fijo">
+                </a>
+            </div>
+            
+        </div>
+        <!-- finalScroll -->
+    </div>
+    <div class="custom-scrollbar" id="customScrollbar">
+        <img src="/assets/Happy_Ghast_Blue_Harness_Goggles_Up_Leashed_JE1_BE1.webp" alt="Ghast Scroll" />
+    </div>
+    
+    
+    
+</body>
+    
+
+</html>

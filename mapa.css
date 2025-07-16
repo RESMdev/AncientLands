@@ -1,0 +1,82 @@
+.main-container {
+  background-color: #000000;
+  border-radius: 30px 30px 58px 58px;
+  width: 100vw !important; 
+  box-sizing: border-box;
+  position: relative; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* iframe que ocupa todo el espacio interno de main-container */
+.iframe-map {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  border-radius: 20px; /* borde redondeado para el iframe */
+  display: block;
+}
+
+/* Menú principal (clase .menuH) sobre el mapa */
+.menuH {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  left: 40vw;
+  z-index: 10;
+}
+
+/* Menú móvil sobre el mapa */
+nav {
+  position: absolute;
+  top: 60px; /* ajustar según altura menú principal */
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  color: var(--blanco);
+}
+
+/*Hovers*/
+.elementoMenu.icono-menu {
+  display: inline-block;
+  width: 24px;   /* tamaño de la imagen */
+  height: 24px;
+  background-image: url('assets/MenuNormal.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle; /* para alinearse con texto */
+  transition: background-image 0.8s ease-out;
+  
+}
+
+.elementoMenu.icono-menu:hover {
+  background-image: url('assets/MenuHoverB.svg');
+}
+
+.icono-menu {
+  display: block;
+  transition: opacity 0.8s ease-out;
+}
+
+.hover-image {
+  display: none;
+  transition: opacity 0.8s ease-out;
+}
+
+.elementoMenu:hover .icono-menu {
+  display: none;
+  opacity: 0;
+}
+
+.elementoMenu:hover .hover-image {
+  display: block;
+  opacity: 1;
+}
+
+
+
+

@@ -1,0 +1,75 @@
+/*Hovers para modelo sin sufijo B*/
+.elementoMenu.icono-menu {
+    display: inline-block;
+    width: 24px;   /* tamaño de la imagen */
+    height: 24px;
+    background-image: url('assets/MenuNormal.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle; /* para alinearse con texto */
+    transition: background-image 0.8s ease-out;
+}
+
+.elementoMenu.icono-menu:hover {
+  background-image: url('assets/MenuHover.svg'); /* o MenuHoverB.svg si quieres hover B */
+}
+
+.icono-menu {
+    display: block;
+    transition: opacity 0.8s ease-out;
+}
+
+.hover-image {
+    display: none;
+    transition: opacity 0.8s ease-out;
+}
+
+.elementoMenu:hover .icono-menu {
+    display: none;
+    opacity: 0;
+}
+
+.elementoMenu:hover .hover-image {
+    display: block;
+    opacity: 1;
+}
+
+.noticias-periodico {
+  margin: 20px 0 40px 0; /* separación arriba y abajo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* un ancho fijo máximo o relativo */
+  width: 90%; /* que no ocupe todo el ancho si no quieres */
+  height: auto;
+}
+
+
+
+
+.menuH {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* o el alto real de tu menú */
+  z-index: 1000; /* para que esté encima del resto */
+  display: flex;
+  align-items: center;
+  background-color: var(--blanco);
+}
+
+
+
+.main-container {
+  padding-top: 60px; /* mismo alto que el menú fijo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* para que el contenido empiece abajo del padding */
+  width: 100%;
+  height: 100vh; /* para limitar altura y permitir scroll interno */
+  overflow-y: auto; /* scroll vertical solo aquí */
+  box-sizing: border-box; /* para que el padding no aumente ancho */
+}
+

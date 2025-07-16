@@ -1,0 +1,919 @@
+/*Hovers para modelo sin sufijo B*/
+.elementoMenu.icono-menu {
+  display: inline-block;
+  width: 24px;   /* tamaño de la imagen */
+  height: 24px;
+  background-image: url('assets/MenuNormal.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle; /* para alinearse con texto */
+  transition: background-image 0.8s ease-out;
+}
+
+.elementoMenu.icono-menu:hover {
+  background-image: url('assets/MenuHover.svg'); /* o MenuHoverB.svg si quieres hover B */
+}
+
+.icono-menu {
+  display: block;
+  transition: opacity 0.8s ease-out;
+}
+
+.hover-image {
+  display: none;
+  transition: opacity 0.8s ease-out;
+}
+
+.elementoMenu:hover .icono-menu {
+  display: none;
+  opacity: 0;
+}
+
+.elementoMenu:hover .hover-image {
+  display: block;
+  opacity: 1;
+}
+
+/*Tarjetas*/
+
+.tarjeta-frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.tarjeta-frame .tematica {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+
+}
+
+.tarjeta-frame .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tarjeta-frame .tarjeta {
+  display: flex;
+  width: 238px;
+  height: 350px;
+  align-items: center;
+  position: relative;
+}
+
+.tarjeta-frame .foto {
+  position: relative;
+  width: 214px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.tarjeta-frame .borde {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 350px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 0px 16px 16px 0px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 255, 248, 1) 100%
+  );
+}
+
+.tarjeta-frame .frase {
+  margin: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: -7.50px;
+  margin-right: -7.50px;
+}
+
+.tarjeta-frame .div {
+  position: relative;
+  width: fit-content;
+  margin-left: -9.00px;
+  transform: rotate(90.00deg);
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tarjeta-frame .text-wrapper-2 {
+  width: fit-content;
+  margin-left: -18.50px;
+  margin-right: -18.50px;
+  transform: rotate(90.00deg);
+  font-family: "Minecraft", Helvetica;
+  color: #000000;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tarjeta-frame .frase-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: -4.00px;
+  margin-right: -4.00px;
+}
+
+.tarjeta-frame .text-wrapper-3 {
+  position: relative;
+  width: 90px;
+  margin-bottom: 16px;
+  margin-left: -27.50px;
+  margin-right: -25.50px;
+  transform: rotate(90.00deg);
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tarjeta-frame .cono {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  transform: rotate(90.00deg);
+}
+
+.tarjeta-frame .vector {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  transform: rotate(-90.00deg);
+}
+
+.tarjeta-frame .fondo {
+  display: flex;
+  flex-direction: column;
+  width: 214px;
+  height: 143px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 207px;
+  left: 0;
+  border-radius: 16px 0px 0px 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 1) 74%
+  );
+}
+
+.tarjeta-frame .titulo-lema-linea {
+  display: flex;
+  flex-direction: column;
+  width: 198px;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.tarjeta-frame .titulo-lema {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.tarjeta-frame .p {
+  position: relative;
+  width: 155px;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 24px;
+}
+
+.tarjeta-frame .text-wrapper-4 {
+  align-self: stretch;
+  margin-top: -4px;
+  font-family: "MinecraftEvenings", Helvetica;
+  color: #ffffff;
+  font-size: 32px;
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 24px;
+}
+
+.tarjeta-frame .faccion-datos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+
+}
+
+.tarjeta-frame .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 16px;
+}
+
+.tarjeta-frame .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-bottom: 24px;
+  padding-left: 16px;
+}
+
+/* Variante01
+.tarjeta {
+  position: relative;
+  z-index: 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 18px; 
+  border: 2px solid transparent;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(20,255,236,1) 100%);
+  mask: none;
+  -webkit-mask: none;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tarjeta:hover::before {
+  opacity: 1;
+}
+*/
+
+.tarjeta {
+  position: relative;
+  border-radius: 16px; /* Radio interno de la tarjeta */
+  z-index: 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 20px; /* Más grande que el de .tarjeta para crear el "borde suave" */
+  background: linear-gradient(180deg, var(--color1, #ffffff), var(--color2, #14ffec));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tarjeta:hover::before,
+.tarjeta.sombra-click::before {
+  opacity: 1;
+}
+
+.tarjeta.sombra-click {
+  box-shadow: 0 0 20px 6px var(--color2, rgba(20, 255, 236, 0.6));
+  border-radius: 16px; /* Mantener el mismo radio que .tarjeta */
+}
+
+/* Contenedor principal para las tarjetas */
+#contenedor-facciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px; /* Espacio entre tarjetas */
+  box-sizing: border-box; /* Para incluir padding en el ancho total */
+  height: 720px;
+  width: 52.92vw;
+  position: relative;
+  overflow: auto;
+  bottom: 65px;
+  align-content: flex-start;
+ /* Ocultar scrollbars */
+  scrollbar-width: none;        /* Firefox */
+  padding: 8vh;
+  -ms-overflow-style: none;     /* Internet Explorer y Edge */
+}
+
+#contenedor-facciones::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+}
+
+/* EstadisticasEstilos */
+.frame-estadisticas {
+  display: flex;
+  padding-top: 104px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  bottom: 20px;
+  height: 100vh;
+}
+
+.frame-estadisticas .nombre-cabecera {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  padding: 0px 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame-estadisticas .subinfo {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: flex-start;
+  position: relative;
+  
+}
+
+.frame-estadisticas .div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .ellipse {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #12ffa4;
+  border-radius: 8px;
+}
+
+.frame-estadisticas .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame-estadisticas .div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .div-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame-estadisticas .estadisticas-zona {
+  gap: 48px;
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .div-4 {
+  flex-direction: column;
+  gap: 10px;
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .div-5 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .div-6 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.frame-estadisticas .group {
+  position: relative;
+  width: 13px;
+  height: 11px;
+  top: 3px;
+  left: 1px;
+}
+
+.frame-estadisticas .overlap-group {
+  position: relative;
+  width: 14px;
+  height: 12px;
+}
+
+.frame-estadisticas .vector {
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  top: 0;
+  left: 9px;
+}
+
+.frame-estadisticas .img {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: 0;
+}
+
+.frame-estadisticas .vector-2 {
+  position: absolute;
+  width: 3px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+}
+
+.frame-estadisticas .vector-3 {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 2px;
+  left: 1px;
+}
+
+.frame-estadisticas .vector-4 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  left: 2px;
+}
+
+.frame-estadisticas .overlap-group-wrapper {
+  width: 15px;
+  height: 15px;
+}
+
+.frame-estadisticas .overlap-group-2 {
+  position: relative;
+  height: 15px;
+}
+
+.frame-estadisticas .vector-5 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 4px;
+  left: 3px;
+}
+
+.frame-estadisticas .vector-6 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.frame-estadisticas .arquitectura-icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  transform: rotate(90.00deg);
+}
+
+.frame-estadisticas .vector-7 {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-90.00deg);
+}
+
+.frame-estadisticas .overlap-group-3 {
+  position: relative;
+  height: 16px;
+}
+
+.frame-estadisticas .vector-8 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 6px;
+  left: 6px;
+}
+
+.frame-estadisticas .vector-9 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+}
+
+.frame-estadisticas .div-wrapper {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  top: 1px;
+}
+
+.frame-estadisticas .vector-10 {
+  position: absolute;
+  width: 9px;
+  height: 11px;
+  top: 2px;
+  left: 3px;
+}
+
+.frame-estadisticas .vector-11 {
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  top: 8px;
+  left: 0;
+}
+
+.frame-estadisticas .vector-12 {
+  position: absolute;
+  width: 13px;
+  height: 10px;
+  top: 0;
+  left: 1px;
+}
+
+.frame-estadisticas .overlap-group-4 {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+}
+
+.frame-estadisticas .vector-13 {
+  position: absolute;
+  width: 14px;
+  height: 9px;
+  top: 0;
+  left: 0;
+}
+
+.frame-estadisticas .vector-14 {
+  position: absolute;
+  width: 6px;
+  height: 9px;
+  top: 5px;
+  left: 4px;
+}
+
+.frame-estadisticas .vector-15 {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+}
+
+.frame-estadisticas .vector-16 {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+}
+
+.frame-estadisticas .vector-17 {
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  top: 2px;
+  left: 1px;
+}
+
+.frame-estadisticas .vector-18 {
+  position: absolute;
+  width: 14px;
+  height: 15px;
+  top: 1px;
+  left: 1px;
+}
+
+.frame-estadisticas .ciudades {
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .span {
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+}
+
+.frame-estadisticas .text-wrapper-3 {
+  font-size: 16px;
+}
+
+.frame-estadisticas .p {
+  position: relative;
+  width: fit-content;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame-estadisticas .nivel-hostilidad {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .hostilidad-nivel {
+  display: flex;
+  width: 233px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-estadisticas .ellipse-2 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #1284ff;
+  border-radius: 8px;
+}
+
+.frame-estadisticas .pixelarticons-check {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.frame-estadisticas .img-2 {
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  top: 6px;
+  left: 4px;
+}
+
+.frame-estadisticas .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  font-family: "Minecraft", Helvetica;
+  font-weight: 400;
+  color: #1284ff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame-estadisticas .chart {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  height: 198px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin-right: -12.00px;
+}
+
+.frame-estadisticas .image {
+  position: relative;
+  width: 242px;
+  height: 205px;
+  margin-top: -3.50px;
+  margin-bottom: -3.50px;
+  object-fit: cover;
+}
+
+.contenedorFaccionesEstadisticas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 98px;
+  box-sizing: border-box; /* Para incluir el padding en el ancho total */
+}
+
+.iconoEstadistica {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.iconoEstadistica {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0;
+  object-fit: contain;
+}
+
+.divpeque {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  height: 24px;
+}
+
+.radar{
+  max-width: 400px; 
+  margin: auto;
+}
+
+#graficaFaccion{
+    position: absolute;
+    bottom: 140px;
+    height: 50vh!important;
+    width: auto!important;
+
+}
+
+#estadisticas{
+}
+
+.grafica-flotante {
+  position: fixed;
+  width: 420px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #14ffec;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(20, 255, 236, 0.5);
+  cursor: move;
+}
+
+.grafica-header {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #14ffec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.grafica-header span {
+  color: #14ffec;
+  font-family: "Minecraft", Helvetica;
+}
+
+.cerrar-grafica {
+  background: transparent;
+  border: none;
+  color: #14ffec;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.cerrar-grafica:hover {
+  color: #fff;
+}
+
+.grafica-container {
+  padding: 15px;
+}

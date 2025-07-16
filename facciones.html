@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facciones</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Conoce todas las facciones activas en AncientLands. Únete a un clan medieval, lucha por tu honor y gana poder en el mejor servidor Minecraft en español." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Estilos e íconos -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="facciones.css" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script src="facciones.js" defer></script>
+  <script src="listaFacciones.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body style="margin: 0; padding: 0; background-color: #000;">
+    <!-- ScrollHappyGhast inicio -->
+    <div id="scrollContainer" class="scroll-container">
+        <div class="content">
+            <div class="main-container">
+                
+                
+                <!-- Menu Móvil -->
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <img id="burgerIcon" src="assets/burguer.svg" alt="Menú" />
+                    </div>
+                    <ul id="mobileMenu">
+                        <li><a href="/index.html">
+                            <span class="fuenteMenuMovil">Home</span>
+                        </a></li>
+                        <li><a href="/noticias.html">
+                            <span class="fuenteMenuMovil">Noticias</span>
+                        </a></li>
+                        <li><a href="/mapa.html">
+                            <span class="fuenteMenuMovil">Mapa</span>
+                        </a></li>
+                        <li><a href="/propaganda.html">
+                            <span class="fuenteMenuMovil">Propaganda</span>
+                        </a></li>
+                        <li><a href="/facciones.html">
+                            <span class="fuenteMenuMovil">Facciones</span>
+                        </a></li>
+                        <li><a href="/donar.html">
+                            <span class="fuenteMenuMovil">Donar</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Menu Home seleccionado -->
+                <nav class="menuH" id="menu">
+                    <ul>
+                        <li class="boton-landing-menu">
+                            <a href="/index.html" class="elementoMenu">
+                                <span class="fuenteMenu">Home</span> 
+                                <img src="assets/MenuNormal.svg" alt="Home Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/noticias.html" class="elementoMenu">
+                                <span class="fuenteMenu">Noticias</span>
+                                <img src="assets/MenuNormal.svg" alt="Noticias Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="mapa.html" class="elementoMenu">
+                                <span class="fuenteMenu">Mapa</span>
+                                <img src="assets/MenuNormal.svg" alt="Mapa Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/propaganda.html" class="elementoMenu">
+                                <span class="fuenteMenu">Propaganda</span>
+                                <img src="assets/MenuNormal.svg" alt="Propaganda Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/facciones.html" class="elementoMenu">
+                                <span class="fuenteMenu">Facciones</span> 
+                                <img src="assets/MenuClick.svg" alt="Facciones Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                        
+                        <li class="boton-landing-menu">
+                            <a href="/donar.html" class="elementoMenu">
+                                <span class="fuenteMenu">Donar</span>
+                                <img src="assets/MenuNormal.svg" alt="donar Icon" class="icono-menu">
+                                <img src="assets/MenuHover.svg" alt="Icono Hover" class="hover-image" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="contenedorFaccionesEstadisticas">  
+                    <div id="contenedor-facciones">
+                        <!-- Menu Móvil 
+                        <div class="tarjeta-frame">
+                            <div class="tematica"><div class="text-wrapper Fuente16Minecraftnegro">Antigua Grecia</div></div>
+                                <div class="tarjeta">
+                                    <img class="foto" src="assets/olimpus.png" />
+                                    <div class="borde">
+                                    <div class="frase">
+                                        <div class="div Fuente8Minecraftnegro">dioses,</div>
+                                        <div class="text-wrapper-2 Fuente16Minecraftnegro">Olimpus</div>
+                                    </div>
+                                    <div class="frase-2">
+                                        <div class="text-wrapper-3 Fuente8Minecraftnegro">mortales y más</div>
+                                        <div class="cono"><img class="vector" src="img/vector.svg" /></div>
+                                    </div>
+                                    </div>
+                                    <div class="fondo">
+                                    <div class="titulo-lema-linea">
+                                        <div class="titulo-lema">
+                                        <p class="p Fuente8Minecraftblanco">Hijos del rayo, herederos del mundo.</p>
+                                        <div class="text-wrapper-4">OLIMPUS</div>
+                                        </div>
+                                        <img  src="assets/lineaOlimpus.svg" />
+                                    </div>
+                                    <div class="faccion-datos">
+                                        <div class="text-wrapper-5 Fuente16Minecraftnegro">Miembros: 29</div>
+                                        <div class="text-wrapper-6 Fuente16Minecraftnegro">Líder: Zeus | Niko</div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div id="graficaFlotante" class="grafica-flotante" style="display: none;">
+                          <div class="grafica-header">
+                            <span>Estadísticas de ${faccion.nombre}</span>
+                            <button class="cerrar-grafica">×</button>
+                          </div>
+                          <div class="grafica-container">
+                            <canvas id="graficaFaccion"></canvas>
+                          </div>
+                        </div>
+                    <div id="estadisticas"></div>
+                    
+
+                    
+                </div>
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Logo AncientLands" class="logo-fijo">
+                </a>
+            </div>
+            
+        </div>
+        <!-- finalScroll -->
+    </div>
+    <div class="custom-scrollbar" id="customScrollbar">
+        <img src="/assets/Happy_Ghast_Blue_Harness_Goggles_Up_Leashed_JE1_BE1.webp" alt="Ghast Scroll" />
+    </div>
+    
+    
+    
+</body>
+</html>
