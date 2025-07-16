@@ -28,7 +28,7 @@ const facciones = [
       Dioses: 10,
       Mortales: 21,
     },
-    nivelHostilidad: 2,
+    nivelHostilidad: 0,
   },
     {
     nombre: "el Comtat d'Estiche",
